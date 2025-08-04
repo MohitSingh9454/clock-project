@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  background: #111;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('photo4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+    color: white;
+}
+.clock {
+  width: 300px;
+  height: 300px;
+  border: 10px solid white;
+  border-radius: 50%;
+  position: relative;
+  background: black;
+}
+
+.numbers span {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transform: rotate(calc(30deg * var(--i))) translateY(-130px) rotate(calc(-30deg * var(--i)));
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+}
+
+.center {
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom;
+  transform: translate(-50%, -100%) rotate(0deg);
+  border-radius: 10px;
+}
+
+.hour {
+  width: 6px;
+  height: 80px;
+  background: yellow;
+  z-index: 3;
+}
+
+.minute {
+  width: 4px;
+  height: 110px;
+  background: white;
+  z-index: 2;
+}
+
+.second {
+  width: 2px;
+  height: 140px;
+  background: red;
+  z-index: 1;
+}
+
+.digital-clock {
+
+  margin-top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: black;
+  height: 50px;
+  width: 250px;
+  border: 20px;
+  border-radius: 10px;
+  color: white;
+  font-family: monospace;
+  text-align: center;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
